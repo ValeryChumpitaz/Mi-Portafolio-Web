@@ -1,0 +1,303 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define la animación */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Aplica la animación al encabezado */
+header {
+    animation: fadeIn 1s ease-out;
+    background-color: #292929; /* Color de fondo más sobrio */
+    color: #fff;
+}
+
+/* Estilos para el encabezado */
+header h1 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #292929; /* Color de fondo más sobrio */
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f39c12 !important;
+}
+
+/* Estilos para la foto de perfil */
+img.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #f39c12;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Estilos adicionales para las habilidades */
+.skill {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill:hover {
+    border-color: #f39c12;
+    transform: translateY(-5px);
+}
+
+/* Estilos adicionales para el encabezado */
+header {
+    background-color: #292929; /* Color de fondo más sobrio */
+    color: #fff; /* Color del texto blanco */
+    padding: 50px 0; /* Espaciado interno */
+    text-align: center; /* Alineación centrada del texto */
+    position: relative; /* Posición relativa para elementos posicionados absolutamente internamente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header h1 {
+    font-size: 48px; /* Tamaño grande del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+header p {
+    font-size: 20px; /* Tamaño del texto más grande */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: transparent !important; /* Hace que la barra de navegación sea transparente */
+    padding: 0; /* Elimina el relleno */
+}
+
+.navbar-nav {
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.nav-link {
+    color: #fff !important; /* Color del texto blanco */
+    font-size: 18px; /* Tamaño del texto */
+    margin: 0 15px; /* Espacio entre los elementos del enlace */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.nav-link:hover {
+    color: #f39c12 !important; /* Cambia el color del texto al pasar el mouse */
+}
+
+
+/* Estilos para habilidades */
+
+.skill {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.skill:hover {
+    border-color: #f39c12;
+}
+
+.skill i {
+    color: #f39c12;
+    font-size: 3em;
+}
+
+.skill h3 {
+    margin-top: 10px;
+}
+
+.progress {
+    height: 20px;
+    margin-top: 15px;
+}
+
+.progress-bar {
+    background-color: #f39c12;
+}
+
+/* Estilos para las tarjetas de proyectos */
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la lista de certificaciones */
+.list-group-item {
+    background-color: #f8f8f8;
+    color: #333;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+/* Estilos para la sección de contacto */
+.social-icons a {
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f39c12;
+}
+
+/* Modo claro */
+body.light-mode {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+body.light-mode header {
+    background-color: #292929;
+    color: #fff;
+}
+
+body.light-mode .nav-link {
+    color: #fff !important;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .list-group-item {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .list-group-item:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+/* Toggle switch estilos */
+.mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#toggle-mode {
+    display: none;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: #292929; /* Color de fondo más sobrio */
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.toggle-label .fas {
+    color: #f1c40f;
+    font-size: 16px;
+}
+
+.toggle-label .fa-sun {
+    color: #f39c12;
+}
+
+.ball {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: transform 0.3s;
+}
+
+#toggle-mode:checked + .toggle-label .ball {
+    transform: translateX(30px);
+}
+
+#toggle-mode:checked + .toggle-label {
+    background-color: #f39c12;
+}
+/* Estilos para la foto de perfil en Sobre Mí */
+img.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #f39c12;
+}
+
+/* Estilos para el botón Descargar CV */
+.btn-primary {
+    background-color: #f39c12; /* Color de fondo del botón */
+    border-color: #f39c12; /* Color del borde del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 18px; /* Tamaño del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    margin-top: 20px; /* Espaciado superior del botón */
+}
+
+.btn-primary:hover {
+    background-color: #e67e22; /* Color de fondo del botón al pasar el mouse */
+    border-color: #e67e22; /* Color del borde del botón al pasar el mouse */
+}
